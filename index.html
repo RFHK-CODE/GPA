@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>GPA-Calculator</title>
+</head>
+<body>
+    <table class="table">
+        <tr>
+          <th>Course</th>
+          <th>Enter Grade</th>
+        </tr>
+        <tr>
+          <td>Programming Fundamentals (Theory)</td>
+          <td><input type="text" id="PF" class="in"></td>
+        </tr>
+        <tr>
+          <td>Programming Fundamentals (Lab)</td>
+          <td><input type="text" id="PF-L" class="in"></td>
+        </tr>
+        <tr>
+          <td>Electricity & Magnetism (Theory)</td>
+          <td><input type="text" id="EM" class="in"></td>
+        </tr>
+        <tr>
+          <td>Electricity & Magnetism (Lab)</td>
+          <td><input type="text" id="EM-L" class="in"></td>
+        </tr>
+        <tr>
+          <td>Electric Circuits (Theory)</td>
+          <td><input type="text" id="EC" class="in"></td>
+        </tr>
+        <tr>
+          <td>Electric Circuits (Lab)</td>
+          <td><input type="text" id="EC-L" class="in"></td>
+        </tr>
+        <tr>
+            <td>Multivariate Calculus</td>
+            <td><input type="text" id="MVC" class="in"></td>
+        </tr>
+        <tr>
+            <td>Ordinary Differential Equations</td>
+            <td><input type="text" id="ODE" class="in"></td>
+        </tr>
+        <tr>
+            <td>Electrical & Electronics Workshop</td>
+            <td><input type="text" id="EEW" class="in"></td>
+        </tr>
+        </table>
+    <button class="btn" onclick="calc()">Get GPA</button>
+    <span id="gp" class="sp">0.0</span>
+    <p class="para">Enter the score corresponding to your grade for example 3.3 if you have B+ and so on.</p>
+    <SCript src="calc.js"></SCript>
+</body>
+</html>
