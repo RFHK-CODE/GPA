@@ -12,34 +12,34 @@ function calc()
         if (gra==="A+" || gra==="A") {
             poi = 4.0;
         }
-        if (gra==="A-") {
+        else if (gra==="A-") {
             poi = 3.7;
         }
-        if (gra==="B+") {
+        else if (gra==="B+") {
             poi = 3.3;
         }
-        if (gra==="B") {
+        else if (gra==="B") {
             poi = 3.0;
         }
-        if (gra==="B-") {
+        else if (gra==="B-") {
             poi = 2.7;
         }
-        if (gra==="C+") {
+        else if (gra==="C+") {
             poi = 2.3;
         }
-        if (gra==="C") {
+        else if (gra==="C") {
             poi = 2;
         }
-        if (gra==="C-") {
+        else if (gra==="C-") {
             poi = 1.7;
         }
-        if (gra==="D+") {
+        else if (gra==="D+") {
             poi = 1.3;
         }
-        if (gra==="D") {
+        else if (gra==="D") {
             poi = 1;
         }
-        if (gra==="D-") {
+        else if (gra==="D-") {
             poi = 0.7;
         }
         sum += (poi*CHs[i]);
