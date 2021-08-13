@@ -3,11 +3,47 @@ function calc()
 {
     var inpu = document.getElementsByClassName("in");
     var sum = 0.0;
+    var poi = 0.0;
+    var gra = "F";
     for (var i=0;i<9;i++)
     {
-        sum += (parseFloat(inpu[i].value)*CHs[i]);
+        gra = inpu[i].value;
+        poi = 0.0;
+        if (gra==="A+" || gra==="A") {
+            poi = 4.0;
+        }
+        if (gra==="A-") {
+            poi = 3.7;
+        }
+        if (gra==="B+") {
+            poi = 3.3;
+        }
+        if (gra==="B") {
+            poi = 3.0;
+        }
+        if (gra==="B-") {
+            poi = 2.7;
+        }
+        if (gra==="C+") {
+            poi = 2.3;
+        }
+        if (gra==="C") {
+            poi = 2;
+        }
+        if (gra==="C-") {
+            poi = 1.7;
+        }
+        if (gra==="D+") {
+            poi = 1.3;
+        }
+        if (gra==="D") {
+            poi = 1;
+        }
+        if (gra==="D-") {
+            poi = 0.7;
+        }
+        sum += (poi*CHs[i]);
     }
-    console.log(sum);
     var gpa = sum/18.0;
     var s = document.getElementById("gp");
     s.innerHTML = gpa.toFixed(4);
