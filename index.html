@@ -8,50 +8,176 @@
     <title>GPA-Calculator</title>
 </head>
 <body>
-    <button class="btn2">Calculate with Letter Grades</button>
-    <button class="btn2">Calculate with Grade Points</button>
+    <button id="LG" class="btn2" onclick="lg()">Calculate with Letter Grades</button>
+    <button id="GP" class="btn2" onclick="gp()">Calculate with Grade Points</button>
     <br>
     <br>
     <table class="table">
         <tr>
           <th>Course</th>
-          <th>Enter Grade</th>
+          <th>Select Grade</th>
         </tr>
         <tr>
           <td>Programming Fundamentals (Theory)</td>
-          <td><input type="text" id="PF" class="in"></td>
+          <td><select id="PF" class="in">
+            <option value="Def">Select your Grade</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+          </select>
+          </td>
         </tr>
         <tr>
           <td>Programming Fundamentals (Lab)</td>
-          <td><input type="text" id="PF-L" class="in"></td>
+          <td><select id="PF-L" class="in">
+            <option value="Def">Select your Grade</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+          </select>
+          </td>
         </tr>
         <tr>
           <td>Electricity & Magnetism (Theory)</td>
-          <td><input type="text" id="EM" class="in"></td>
+          <td><select id="EM" class="in">
+            <option value="Def">Select your Grade</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+          </select>
+          </td>
         </tr>
         <tr>
           <td>Electricity & Magnetism (Lab)</td>
-          <td><input type="text" id="EM-L" class="in"></td>
+          <td><select id="EM-L" class="in">
+            <option value="Def">Select your Grade</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+          </select>
+          </td>
         </tr>
         <tr>
           <td>Electric Circuits (Theory)</td>
-          <td><input type="text" id="EC" class="in"></td>
+          <td><select id="EC" class="in">
+            <option value="Def">Select your Grade</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+          </select>
+          </td>
         </tr>
         <tr>
           <td>Electric Circuits (Lab)</td>
-          <td><input type="text" id="EC-L" class="in"></td>
+          <td><select id="EC-L" class="in">
+            <option value="Def">Select your Grade</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+          </select>
+          </td>
         </tr>
         <tr>
-            <td>Multivariate Calculus</td>
-            <td><input type="text" id="MVC" class="in"></td>
+          <td>Multivariate Calculus</td>
+          <td><select id="MVC" class="in">
+            <option value="Def">Select your Grade</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+          </select>
+          </td>
         </tr>
         <tr>
-            <td>Ordinary Differential Equations</td>
-            <td><input type="text" id="ODE" class="in"></td>
+          <td>Ordinary Differential Equations</td>
+          <td><select id="ODE" class="in">
+            <option value="Def">Select your Grade</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+          </select>
+          </td>
         </tr>
         <tr>
-            <td>Electrical & Electronics Workshop</td>
-            <td><input type="text" id="EEW" class="in"></td>
+          <td>Electrical & Electronics Workshop</td>
+          <td><select id="EEW" class="in">
+            <option value="Def">Select your Grade</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="B-">B-</option>
+            <option value="C+">C+</option>
+            <option value="C">C</option>
+            <option value="C-">C-</option>
+            <option value="D+">D+</option>
+            <option value="D">D</option>
+          </select>
+          </td>
         </tr>
         </table>
     <br>

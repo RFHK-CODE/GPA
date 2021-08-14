@@ -8,10 +8,10 @@ body
     background-color: black;
     color: white;
     border: none;
+    cursor: pointer;
     border-radius: 10px;
     font-size: 23px;
     padding: 10px;
-    cursor: pointer;
 }
 .table
 {
@@ -28,7 +28,7 @@ body
 {
     padding: 10px;
 }
-.table input
+.in
 {
     border: 1px solid black;
     background: transparent;
@@ -40,11 +40,11 @@ body
     background-color: black;
     color: white;
     border: none;
+    cursor: pointer;
     padding: 8px;
     border-radius: 8px;
     margin-left: 25%;
     font-size: 20px;
-    cursor: pointer;
 }
 .btn:hover
 {

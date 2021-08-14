@@ -1,4 +1,18 @@
 var CHs = [3.0,1.0,3.0,1.0,3.0,1.0,3.0,2.0,1.0];
+var x = 0;
+var LG = document.getElementById("LG");
+function lg()
+{
+    console.log(x);
+    x = 0;
+    console.log(x);
+}
+function gp()
+{
+    console.log(x);
+    x = 1;
+    console.log(x);
+}
 function calc()
 {
     var inpu = document.getElementsByClassName("in");
@@ -41,6 +55,9 @@ function calc()
         }
         else if (gra==="D-") {
             poi = 0.7;
+        }
+        else {
+            poi = 0;
         }
         sum += (poi*CHs[i]);
     }
