@@ -3,15 +3,11 @@ var x = 0;
 var LG = document.getElementById("LG");
 function lg()
 {
-    console.log(x);
     x = 0;
-    console.log(x);
 }
 function gp()
 {
-    console.log(x);
     x = 1;
-    console.log(x);
 }
 function calc()
 {
